@@ -23,15 +23,11 @@ function myFunction(id) {
 
 
   document.getElementById('searchForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Предотвращаем стандартное поведение отправки формы
+    event.preventDefault();
 
-    // Получаем значение введенное пользователем
     var query = document.getElementById('searchInput').value;
 
-    // Выполняем действия с запросом (например, отправка на сервер или поиск на текущей странице)
     console.log('Выполняем поиск по запросу:', query);
-    // Вместо вывода в консоль вы можете выполнить другие действия, такие как отправка запроса на сервер и обновление страницы с результатами поиска
 
-    // Очистка поля ввода после выполнения поиска
     document.getElementById('searchInput').value = '';
 });
